@@ -1,0 +1,343 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TinyType</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+</head>
+
+<body>
+	<div <label>Welcome to TinyType! Enjoy Typing!</label> </div>
+	<br>
+	<TEXTAREA id="textfield" rows="3" cols="30"></TEXTAREA>
+
+	<div class="instructions">
+		<div <label>Typing Tips:</label> </div>
+		<br>
+		<div <label>1. This interface has 3 levels - level 1 with 9 letter combinations, level 2 with 3 letter combinations and level 3 with single letters</label> </div>
+		<div <label>2. Select from the range of letters in level 1 and 2 to reach the letter you need in level 3. Select that letter to type.</label> </div>
+		<div <label>3. Long Press on any lowercase letter or letter-combination to capitalize the interface, and vice-versa</label> </div>		
+		<div <label>4. Long Press on the DEL key to change it to SPACE, and vice-versa</label> </div>			
+		<div <label>5. Use the &xlarr; key to move one level back. To jump to the first level quickly, long-press the &xlarr; key</label> </div>			
+		</div>
+
+	<div class="keyContainer">
+		<div class="tinyType">
+		
+
+			<div class="common">
+				<span 
+					class="Back" onmouseup="pressKey('Back')">&xlarr;</span>
+				<span 
+					class="Space" onmouseup="pressKey(this.innerHTML)">SPACE</span>
+				<span 
+					class="Del" onmouseup="pressKey(this.innerHTML)">DEL</span> 
+ 			
+			</div>
+			
+
+			<div class="L1_lower"> 
+				<span 
+					id="G1L1_lower" class="G1" onmouseup="pressKey(this.innerHTML)">a - i</span>
+				<span 
+					id="G2L1_lower" class="G2" onmouseup="pressKey(this.innerHTML)">j - r</span> 
+			</div>
+			<div class="L1_lower"> 
+				<span 
+					id="G3L1_lower" class="G3" onmouseup="pressKey(this.innerHTML)">s - z</span>
+			</div>
+			
+			<div class="L1_upper"> 
+				<span 
+					id="G1L1_upper" class="G1" onmouseup="pressKey(this.innerHTML)">A - I</span>
+				<span 
+					id="G2L1_upper" class="G2" onmouseup="pressKey(this.innerHTML)">J - R</span> 
+			</div>
+			<div class="L1_upper"> 
+				<span 
+					id="G3L1_upper" class="G3" onmouseup="pressKey(this.innerHTML)">S - Z</span>
+			</div>
+			
+			
+			<div class="L11_lower"> 
+				<span 
+					id="G1L11_lower" class="G1" onmouseup="pressKey(this.innerHTML)">abc</span>
+				<span 
+					id="G2L11_lower" class="G2" onmouseup="pressKey(this.innerHTML)">def</span> 
+			</div>
+			<div class="L11_lower"> 
+				<span 
+					id="G3L11_lower" class="G3" onmouseup="pressKey(this.innerHTML)">ghi</span>
+			</div>
+
+			<div class="L11_upper"> 
+				<span 
+					id="G1L11_upper" class="G1" onmouseup="pressKey(this.innerHTML)">ABC</span>
+				<span 
+					id="G2L11_upper" class="G2" onmouseup="pressKey(this.innerHTML)">DEF</span> 
+			</div>
+			<div class="L11_upper"> 
+				<span 
+					id="G3L11_upper" class="G3" onmouseup="pressKey(this.innerHTML)">GHI</span>
+			</div>
+			
+
+			<div class="L12_lower"> 
+				<span 
+					id="G1L12_lower" class="G1" onmouseup="pressKey(this.innerHTML)">jkl</span>
+				<span 
+					id="G2L12_lower" class="G2" onmouseup="pressKey(this.innerHTML)">mno</span> 
+			</div>
+			<div class="L12_lower"> 
+				<span 
+					id="G3L12_lower" class="G3" onmouseup="pressKey(this.innerHTML)">pqr</span>
+			</div>
+
+			<div class="L12_upper"> 
+				<span 
+					id="G1L12_upper" class="G1" onmouseup="pressKey(this.innerHTML)">JKL</span>
+				<span 
+					id="G2L12_upper" class="G2" onmouseup="pressKey(this.innerHTML)">MNO</span> 
+			</div>
+			<div class="L12_upper"> 
+				<span 
+					id="G3L12_upper" class="G3" onmouseup="pressKey(this.innerHTML)">PQR</span>
+			</div>
+
+
+			<div class="L13_lower"> 
+				<span 
+					id="G1L13_lower" class="G1" onmouseup="pressKey(this.innerHTML)">stu</span>
+				<span 
+					id="G2L13_lower" class="G2" onmouseup="pressKey(this.innerHTML)">vwx</span> 
+			</div>
+			<div class="L13_lower"> 
+				<span 
+					id="G3L13_lower" class="G3" onmouseup="pressKey(this.innerHTML)">yz.</span>
+			</div>
+
+			<div class="L13_upper"> 
+				<span 
+					id="G1L13_upper" class="G1" onmouseup="pressKey(this.innerHTML)">STU</span>
+				<span 
+					id="G2L13_upper" class="G2" onmouseup="pressKey(this.innerHTML)">VWX</span> 
+			</div>
+			<div class="L13_upper"> 
+				<span 
+					id="G3L13_upper" class="G3" onmouseup="pressKey(this.innerHTML)">YZ,</span>
+			</div>
+
+
+			<div class="L111_lower"> 
+				<span 
+					id="G1L111_lower" class="G1" onmouseup="pressKey(this.innerHTML)">a</span>
+				<span 
+					id="G2L111_lower" class="G2" onmouseup="pressKey(this.innerHTML)">b</span> 
+			</div>
+			<div class="L111_lower"> 
+				<span 
+					id="G3L111_lower" class="G3" onmouseup="pressKey(this.innerHTML)">c</span>
+			</div>
+
+			<div class="L111_upper"> 
+				<span 
+					id="G1L111_upper" class="G1" onmouseup="pressKey(this.innerHTML)">A</span>
+				<span 
+					id="G2L111_upper" class="G2" onmouseup="pressKey(this.innerHTML)">B</span> 
+			</div>
+			<div class="L111_upper"> 
+				<span 
+					id="G3L111_upper" class="G3" onmouseup="pressKey(this.innerHTML)">C</span>
+			</div>
+
+
+			<div class="L112_lower"> 
+				<span 
+					id="G1L112_lower" class="G1" onmouseup="pressKey(this.innerHTML)">d</span>
+				<span 
+					id="G2L112_lower" class="G2" onmouseup="pressKey(this.innerHTML)">e</span> 
+			</div>
+			<div class="L112_lower"> 
+				<span 
+					id="G3L112_lower" class="G3" onmouseup="pressKey(this.innerHTML)">f</span>
+			</div>
+
+			<div class="L112_upper"> 
+				<span 
+					id="G1L112_upper" class="G1" onmouseup="pressKey(this.innerHTML)">D</span>
+				<span 
+					id="G2L112_upper" class="G2" onmouseup="pressKey(this.innerHTML)">E</span> 
+			</div>
+			<div class="L112_upper"> 
+				<span 
+					id="G3L112_upper" class="G3" onmouseup="pressKey(this.innerHTML)">F</span>
+			</div>
+
+
+			<div class="L113_lower"> 
+				<span 
+					id="G1L113_lower" class="G1" onmouseup="pressKey(this.innerHTML)">g</span>
+				<span 
+					id="G2L113_lower" class="G2" onmouseup="pressKey(this.innerHTML)">h</span> 
+			</div>
+			<div class="L113_lower"> 
+				<span 
+					id="G3L113_lower" class="G3" onmouseup="pressKey(this.innerHTML)">i</span>
+			</div>
+
+			<div class="L113_upper"> 
+				<span 
+					id="G1L113_upper" class="G1" onmouseup="pressKey(this.innerHTML)">G</span>
+				<span 
+					id="G2L113_upper" class="G2" onmouseup="pressKey(this.innerHTML)">H</span> 
+			</div>
+			<div class="L113_upper"> 
+				<span 
+					id="G3L113_upper" class="G3" onmouseup="pressKey(this.innerHTML)">I</span>
+			</div>
+
+
+			<div class="L121_lower"> 
+				<span 
+					id="G1L121_lower" class="G1" onmouseup="pressKey(this.innerHTML)">j</span>
+				<span 
+					id="G2L121_lower" class="G2" onmouseup="pressKey(this.innerHTML)">k</span> 
+			</div>
+			<div class="L121_lower"> 
+				<span 
+					id="G3L121_lower" class="G3" onmouseup="pressKey(this.innerHTML)">l</span>
+			</div>
+
+			<div class="L121_upper"> 
+				<span 
+					id="G1L121_upper" class="G1" onmouseup="pressKey(this.innerHTML)">J</span>
+				<span 
+					id="G2L121_upper" class="G2" onmouseup="pressKey(this.innerHTML)">K</span> 
+			</div>
+			<div class="L121_upper"> 
+				<span 
+					id="G3L121_upper" class="G3" onmouseup="pressKey(this.innerHTML)">L</span>
+			</div>
+
+
+			<div class="L122_lower"> 
+				<span 
+					id="G1L122_lower" class="G1" onmouseup="pressKey(this.innerHTML)">m</span>
+				<span 
+					id="G2L122_lower" class="G2" onmouseup="pressKey(this.innerHTML)">n</span> 
+			</div>
+			<div class="L122_lower"> 
+				<span 
+					id="G3L122_lower" class="G3" onmouseup="pressKey(this.innerHTML)">o</span>
+			</div>
+
+			<div class="L122_upper"> 
+				<span 
+					id="G1L122_upper" class="G1" onmouseup="pressKey(this.innerHTML)">M</span>
+				<span 
+					id="G2L122_upper" class="G2" onmouseup="pressKey(this.innerHTML)">N</span> 
+			</div>
+			<div class="L122_upper"> 
+				<span 
+					id="G3L122_upper" class="G3" onmouseup="pressKey(this.innerHTML)">O</span>
+			</div>
+
+
+			<div class="L123_lower"> 
+				<span 
+					id="G1L123_lower" class="G1" onmouseup="pressKey(this.innerHTML)">p</span>
+				<span 
+					id="G2L123_lower" class="G2" onmouseup="pressKey(this.innerHTML)">q</span> 
+			</div>
+			<div class="L123_lower"> 
+				<span 
+					id="G3L123_lower" class="G3" onmouseup="pressKey(this.innerHTML)">r</span>
+			</div>
+
+			<div class="L123_upper"> 
+				<span 
+					id="G1L123_upper" class="G1" onmouseup="pressKey(this.innerHTML)">P</span>
+				<span 
+					id="G2L123_upper" class="G2" onmouseup="pressKey(this.innerHTML)">Q</span> 
+			</div>
+			<div class="L123_upper"> 
+				<span 
+					id="G3L123_upper" class="G3" onmouseup="pressKey(this.innerHTML)">R</span>
+			</div>
+
+
+			<div class="L131_lower"> 
+				<span 
+					id="G1L131_lower" class="G1" onmouseup="pressKey(this.innerHTML)">s</span>
+				<span 
+					id="G2L131_lower" class="G2" onmouseup="pressKey(this.innerHTML)">t</span> 
+			</div>
+			<div class="L131_lower"> 
+				<span 
+					id="G3L131_lower" class="G3" onmouseup="pressKey(this.innerHTML)">u</span>
+			</div>
+
+			<div class="L131_upper"> 
+				<span 
+					id="G1L131_upper" class="G1" onmouseup="pressKey(this.innerHTML)">S</span>
+				<span 
+					id="G2L131_upper" class="G2" onmouseup="pressKey(this.innerHTML)">T</span> 
+			</div>
+			<div class="L131_upper"> 
+				<span 
+					id="G3L131_upper" class="G3" onmouseup="pressKey(this.innerHTML)">U</span>
+			</div>
+
+
+			<div class="L132_lower"> 
+				<span 
+					id="G1L132_lower" class="G1" onmouseup="pressKey(this.innerHTML)">v</span>
+				<span 
+					id="G2L132_lower" class="G2" onmouseup="pressKey(this.innerHTML)">w</span> 
+			</div>
+			<div class="L132_lower"> 
+				<span 
+					id="G3L132_lower" class="G3" onmouseup="pressKey(this.innerHTML)">x</span>
+			</div>
+
+			<div class="L132_upper"> 
+				<span 
+					id="G1L132_upper" class="G1" onmouseup="pressKey(this.innerHTML)">V</span>
+				<span 
+					id="G2L132_upper" class="G2" onmouseup="pressKey(this.innerHTML)">W</span> 
+			</div>
+			<div class="L132_upper"> 
+				<span 
+					id="G3L132_upper" class="G3" onmouseup="pressKey(this.innerHTML)">X</span>
+			</div>
+
+
+			<div class="L133_lower"> 
+				<span 
+					id="G1L133_lower" class="G1" onmouseup="pressKey(this.innerHTML)">y</span>
+				<span 
+					id="G2L133_lower" class="G2" onmouseup="pressKey(this.innerHTML)">z</span> 
+			</div>
+			<div class="L133_lower"> 
+				<span 
+					id="G3L133_lower" class="G3" onmouseup="pressKey(this.innerHTML)">.</span>
+			</div>
+
+			<div class="L133_upper"> 
+				<span 
+					id="G1L133_upper" class="G1" onmouseup="pressKey(this.innerHTML)">Y</span>
+				<span 
+					id="G2L133_upper" class="G2" onmouseup="pressKey(this.innerHTML)">Z</span> 
+			</div>
+			<div class="L133_upper"> 
+				<span 
+					id="G3L133_upper" class="G3" onmouseup="pressKey(this.innerHTML)">,</span>
+			</div>
+
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
