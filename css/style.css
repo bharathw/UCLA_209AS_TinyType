@@ -1,0 +1,277 @@
+.keyContainer {
+    width: 2cm;
+    height: 2cm;
+	position: absolute;
+	top: 120;
+	left: 80;
+}
+
+.instructions {
+	position: absolute;
+	top: 7;
+	left: 400;
+}
+
+.tinyType {
+	background-color: #000000;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	font-size: 0;
+	user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	display: inline-block;
+}
+
+.tinyType .Del {
+	position: absolute;
+	z-index:0;
+	top: 35;
+	left: 35;
+	background-color: #6495ED;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-size: 9;
+	font-family: sans-serif;
+	cursor: pointer;
+	transition: 0.1s ease;
+}
+
+.tinyType .Del:active {
+	background-color: #999;
+}
+
+.tinyType .Space {
+	position: absolute;
+	z-index:0;
+	top: 35;
+	left: 35;
+	background-color: #6495ED;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-size: 9;
+	font-family: sans-serif;
+	cursor: pointer;
+	transition: 0.1s ease;
+}
+
+.tinyType .Space:active {
+	background-color: #999;
+}
+
+.tinyType .Back {
+	position: absolute;
+	z-index:1;
+	top: 27;
+	left: 26;
+	background-color: #FF7F50;
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	line-height: 22px;
+	font-size: 14;
+	font-family: sans-serif;
+	cursor: pointer;
+	transition: 0.1s ease;
+}
+
+.tinyType .Back:active {
+	background-color: #999;
+}
+
+.tinyType .G1 {
+	background-color: #BDB76B;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-size: 13;
+	font-family: sans-serif;
+	cursor: pointer;
+	transition: 0.1s ease;
+}
+
+.tinyType .G1:active {
+	background-color: #999;
+}
+
+.tinyType .G2 {
+	background-color: #BDB76B;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-size: 13;
+	font-family: sans-serif;
+	cursor: pointer;
+	transition: 0.1s ease;
+}
+
+.tinyType .G2:active {
+	background-color: #999;
+}
+
+.tinyType .G3 {
+	background-color: #BDB76B;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 5px;
+	font-size: 13;
+	font-family: sans-serif;
+	cursor: pointer;
+	transition: 0.1s ease;
+}
+
+.tinyType .G3:active {
+	background-color: #999;
+}
+
+.tinyType .Back {
+	display: block;
+}
+
+.tinyType .Del {
+	display: block;
+}
+
+.tinyType .Space {
+	display: none;
+}
+
+.tinyType .L1_lower {
+	display: block;
+}
+
+.tinyType .L1_upper {
+	display: none;
+}
+
+.tinyType .L11_lower {
+	display: none;
+}
+
+.tinyType .L11_upper {
+	display: none;
+}
+
+.tinyType .L12_lower {
+	display: none;
+}
+
+.tinyType .L12_upper {
+	display: none;
+}
+
+.tinyType .L13_lower {
+	display: none;
+}
+
+.tinyType .L13_upper {
+	display: none;
+}
+
+.tinyType .L111_lower {
+	display: none;
+}
+
+.tinyType .L111_upper {
+	display: none;
+}
+
+.tinyType .L112_lower {
+	display: none;
+}
+
+.tinyType .L112_upper {
+	display: none;
+}
+
+.tinyType .L113_lower {
+	display: none;
+}
+
+.tinyType .L113_upper {
+	display: none;
+}
+
+.tinyType .L121_lower {
+	display: none;
+}
+
+.tinyType .L121_upper {
+	display: none;
+}
+
+.tinyType .L122_lower {
+	display: none;
+}
+
+.tinyType .L122_upper {
+	display: none;
+}
+
+.tinyType .L123_lower {
+	display: none;
+}
+
+.tinyType .L123_upper {
+	display: none;
+}
+
+.tinyType .L131_lower {
+	display: none;
+}
+
+.tinyType .L131_upper {
+	display: none;
+}
+
+.tinyType .L132_lower {
+	display: none;
+}
+
+.tinyType .L132_upper {
+	display: none;
+}
+
+.tinyType .L133_lower {
+	display: none;
+}
+
+.tinyType .L133_upper {
+	display: none;
+}
